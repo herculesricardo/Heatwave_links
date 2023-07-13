@@ -52,7 +52,7 @@
   /*Botões*/
   ul li a {
     font-family: "heatwave";
-    color: var(--text-color);
+    color: #FF6600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +72,7 @@
   /* SOBRE NÓS */
 #apresentacao img{
     width: 70%;
-    animation: fadeInLoop 7s ease-in-out infinite;
+    animation: fadeIn 5s ease-in-out;
 
 }
 .qsn{
@@ -84,12 +84,12 @@
 .qsn h1,h2{
     margin: 20px 0px;
     font-family: "heatwave";
-    color: var(--text-color);
+    color: #FF6600;
     font-size: 2em;
 }
 .qsn p{
  font-family:"berlin";
- font-size: 1.3em;
+ font-size: 1.5em;
  line-height: 30px;
 }
 footer{
@@ -97,24 +97,18 @@ footer{
 }
 footer p{
 font-family: "berlin";
-font-size: 1.3em;
+font-size: 1.5em;
 text-align: center;
 padding-bottom: 50px;
 
 }
-@keyframes fadeInLoop {
+@keyframes fadeIn {
   0% {
     opacity: 0;
     transform: scale(0.5);
   }
-  50% {
+  100% {
     opacity: 1;
     transform: scale(1);
   }
-  100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
 }
-
-
