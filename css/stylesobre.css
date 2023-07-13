@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'heatwave';
+    src: url(../fonts/Renegade\ Pursuit.otf)format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family:'berlin';
+    src: url(../fonts/berlin-sans-fb-3.ttf)format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --text-color: white;
+    --bg-url: url(../assets/bg.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+  }
+
+  body {
+    display: block;
+    background: var(--bg-url) no-repeat top center/cover;
+    width:100vw;
+    height: 100vh;
+    background-attachment: fixed;
+
+  }
+  body * {
+    color: var(--text-color);
+  }
+  ::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+
+}
+  /* BOTÃO PAGINA INICIAL */
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 24px;
+  }
+  /*Botões*/
+  ul li a {
+    font-family: "heatwave";
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  ul li a:hover {
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+  }
+  /* SOBRE NÓS */
+#apresentacao img{
+    width: 70%;
+    animation: fadeInLoop 7s ease-in-out infinite;
+
+}
+.qsn{
+    padding: 20px;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.qsn h1,h2{
+    margin: 20px 0px;
+    font-family: "heatwave";
+    color: var(--text-color);
+    font-size: 2em;
+}
+.qsn p{
+ font-family:"berlin";
+ font-size: 1.3em;
+ line-height: 30px;
+}
+footer{
+  margin-bottom: 50px;
+}
+footer p{
+font-family: "berlin";
+font-size: 1.3em;
+text-align: center;
+padding-bottom: 50px;
+
+}
+@keyframes fadeInLoop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+
